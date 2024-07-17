@@ -6,22 +6,24 @@ import {
   FeaturesSectionImageThree,
   DownloadSectionImage
 } from '../public/images'
+import NavHeader from "@/components/NavHeader";
+import HeroSection from "@/components/HeroSection";
+import AboutSection from "@/components/AboutSection";
+import FeaturesSection from "@/components/FeaturesSection";
+import PrincingSection from "@/components/PrincingSection";
+import DownloadSection from "@/components/DownloadSection";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      
-            <Image
-              src={FeaturesSectionImageOne}
-              alt="Vercel Logo"
-              width={100}
-              height={24}
-              priority
-            />
-
-
-
-     
-    </main>
+    <>
+      <NavHeader/>
+      <HeroSection/>
+      <AboutSection/>
+      <FeaturesSection/>
+      <PrincingSection/>
+      <DownloadSection/>
+      <Footer/>
+    </>
   );
 }
